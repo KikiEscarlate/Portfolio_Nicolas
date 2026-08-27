@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicolas dos Reis | Portfólio</title>
     <link rel="stylesheet" href="Style/style.css">
-    <!-- Fontes do Google (Inter e Space Mono) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="mouse-glow"></div>
+    
     <nav id="navbar">
         <div class="logo">NDR_</div>
         <ul class="nav-links">
             <li><a href="#home">Início</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#contato">Contato</a></li>
@@ -24,20 +24,15 @@
     </nav>
 
     <main>
-        <!-- Seção Hero -->
+        <!-- Hero Section -->
         <section id="home" class="hero section">
-
-            <!-- LADO ESQUERDO: Textos agrupados na mesma coluna -->
             <div class="hero-content">
                 <p class="terminal-text">> Olá, mundo. Meu nome é</p>
                 <h1 class="glitch-text">Nicolas dos Reis</h1>
                 <h2 class="subtitle">Técnico em Informática & Entusiasta em Cibersegurança</h2>
-                <p class="description">Formado pelo IFRS, com experiência prática em suporte técnico, infraestrutura e
-                    administração de redes. Busco constantemente aprender e aplicar novos conhecimentos em proteção de
-                    dados e desenvolvimento.</p>
+                <p class="description">Formado pelo IFRS, com experiência prática em suporte técnico, infraestrutura e administração de redes. Busco constantemente aprender e aplicar novos conhecimentos em proteção de dados e desenvolvimento.</p>
             </div>
 
-            <!-- LADO DIREITO: O Terminal -->
             <div class="hero-visual">
                 <div class="terminal-container">
                     <div class="terminal-header">
@@ -49,43 +44,75 @@
                         <div class="terminal-title">zsh - nicolas.reis@archlinux</div>
                     </div>
                     <div class="terminal-body">
-                        <div><span class="prompt-user">nicolas.reis@archlinux:~$</span> <span
-                                class="command-text">whoami</span></div>
+                        <div><span class="prompt-user">nicolas.reis@archlinux:~$</span> <span class="command-text">whoami</span></div>
                         <span class="output-text">nicolas.reis</span>
 
-                        <div><span class="prompt-user">nicolas.reis@archlinux:~$</span> <span
-                                class="command-text">skills</span></div>
+                        <div><span class="prompt-user">nicolas.reis@archlinux:~$</span> <span class="command-text">skills</span></div>
                         <span class="output-text">Python, JavaScript, Linux, SQL, Redes, Ethical Hacking</span>
 
-                        <div><span class="prompt-user">nicolas.reis@archlinux:~$</span> <span
-                                class="command-text">status</span></div>
+                        <div><span class="prompt-user">nicolas.reis@archlinux:~$</span> <span class="command-text">status</span></div>
                         <span class="output-text">Construindo soluções seguras e explorando cibersegurança...</span>
 
-                        <!-- Última linha com cursor piscando parado -->
-                        <div><span class="prompt-user">nicolas.reis@archlinux:~$</span> <span class="cursor"></span>
-                        </div>
+                        <div><span class="prompt-user">nicolas.reis@archlinux:~$</span> <span class="cursor"></span></div>
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <!-- Seção Sobre & Experiência -->
+        <!-- Habilidades -->
+        <section id="habilidades" class="section">
+            <h2 class="section-title">/ferramentas</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3 class="skill-category">PROGRAMAÇÃO</h3>
+                    <ul class="skill-list dot-green">
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>HTML & CSS</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3 class="skill-category">INFRA E S.O.</h3>
+                    <ul class="skill-list dot-blue">
+                        <li>Linux</li>
+                        <li>Windows</li>
+                        <li>Redes</li>
+                        <li>Ethical Hacking</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3 class="skill-category">BANCO DE DADOS</h3>
+                    <ul class="skill-list dot-purple">
+                        <li>MySQL</li>
+                        <li>SQL Server</li>
+                        <li>Oracle</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3 class="skill-category">FERRAMENTAS</h3>
+                    <ul class="skill-list dot-orange">
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>VS Code</li>
+                        <li>Office 365</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre -->
         <section id="sobre" class="section">
             <h2 class="section-title">/sobre_e_experiência</h2>
             <div class="project-grid">
                 <div class="project-card">
                     <h3>Estagiário de TI (Suporte e Infraestrutura)</h3>
-                    <p class="tech-stack" style="margin: 0.5rem 0;">Brigada Militar do Estado do RS | Nov 2023 - Mai
-                        2024</p>
-                    <p>Atuação em Suporte Técnico e Service Desk, manutenção de hardware/software, redes de computadores
-                        e atendimento ao usuário na resolução de chamados técnicos.</p>
+                    <p class="tech-stack card-subtext">Brigada Militar do Estado do RS | Nov 2023 - Mai 2024</p>
+                    <p>Atuação em Suporte Técnico e Service Desk, manutenção de hardware/software, redes de computadores e atendimento ao usuário na resolução de chamados técnicos.</p>
                 </div>
-
                 <div class="project-card">
-                    <h3>Educação & Habilidades</h3>
-                    <p><strong>Formação:</strong> Técnico em Informática Integrado ao Ensino Médio - IFRS (Concluído).
-                    </p>
+                    <h3>Educação & Cursos</h3>
+                    <p><strong>Formação:</strong> Técnico em Informática - IFRS (Concluído).</p>
                     <p><strong>Cursos:</strong> Introdução ao Ethical Hacking - Ethical Hacker Academy (IFRN).</p>
                     <div class="tech-stack">
                         <span>Python</span>
@@ -97,70 +124,71 @@
             </div>
         </section>
 
-        <!-- Seção de Projetos -->
+        <!-- Projetos -->
         <section id="projetos" class="section">
             <h2 class="section-title">/projetos</h2>
             <div class="project-grid">
                 <div class="project-card">
                     <h3>Projeto Challenge - Full Stack</h3>
-                    <p>Portfólio online construído para o desafio da residência, focado em estilização pessoal,
-                        componentização e design responsivo.</p>
+                    <p>Portfólio online construído para o desafio da residência, focado em estilização pessoal, componentização e design responsivo.</p>
                     <div class="tech-stack">
                         <span>HTML</span>
                         <span>CSS</span>
                     </div>
-                    <a href="https://github.com/KikiEscarlate/Portfolio_Nicolas" class="btn" target="_blank">Ver
-                        Repositório</a>
+                    <a href="https://github.com/KikiEscarlate/Portfolio_Nicolas" class="btn" target="_blank">Ver Repositório</a>
                 </div>
                 <div class="project-card">
                     <h3>PareceFalso - 🔎</h3>
-                    <p> Solução de segurança desenvolvida para identificar phishing, mensagens e URLs fraudulentas. O
-                        sistema integra Java com a inteligência artificial do Ollama (Llama 3.2) para analisar textos,
-                        classificar o nível de ameaça ("Pouco suspeita" a "Parece Falso Rick") e fornecer orientações de
-                        proteção ao usuário</p>
+                    <p>Solução de segurança desenvolvida para identificar phishing, mensagens e URLs fraudulentas, integrando Java com IA (Llama 3.2).</p>
                     <div class="tech-stack">
                         <span>Java</span>
+                        <span>IA</span>
                     </div>
-                    <a href="https://github.com/CarlosClips/pareceFalsoRick" class="btn" target="_blank">Ver
-                        Repositório</a>
+                    <a href="https://github.com/CarlosClips/pareceFalsoRick" class="btn" target="_blank">Ver Repositório</a>
                 </div>
                 <div class="project-card">
                     <h3>Blackjack 21</h3>
-                    <p>Jogo de Blackjack interativo desenvolvido como um projeto prático de matemática no IFRS. O grande
-                        diferencial do projeto é o algoritmo em JavaScript que calcula em tempo real a probabilidade do
-                        jogador estourar a mão (bust) com base nas cartas restantes no baralho, além de fornecer dicas
-                        de estratégia.</p>
+                    <p>Simulador interativo desenvolvido para o IFRS com algoritmo em JS que calcula em tempo real a probabilidade de estourar a mão (bust).</p>
                     <div class="tech-stack">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
                     </div>
-                    <a href="https://github.com/KikiEscarlate/Trabalho-blackjack" class="btn" target="_blank">Ver
-                        Repositório</a>
+                    <a href="https://github.com/KikiEscarlate/Trabalho-blackjack" class="btn" target="_blank">Ver Repositório</a>
                 </div>
             </div>
         </section>
 
-        <!-- Seção de Contato -->
+       <!-- Contato -->
         <section id="contato" class="section">
             <h2 class="section-title">/conexão</h2>
+            <p class="description" style="margin-bottom: 2rem;">Aberto a novas oportunidades e networking na área de TI e Cibersegurança.</p>
+            
             <div class="project-grid">
-                <div class="project-card">
-                    <p>Aberto a novas oportunidades e networking na área de TI e Cibersegurança.</p>
-                    <br>
-                    <p><strong>Email:</strong> nicolasdosreislopes@gmail.com</p>
-                    <p><strong>Telefone:</strong> (51) 98410-5546</p>
-                    <div class="social-links" style="margin-top: 2rem;">
-                        <a href="https://www.github.com/KikiEscarlate" target="_blank" class="neon-link">GitHub</a>
-                        <a href="https://www.linkedin.com/in/nicolas-reis-682506247" target="_blank"
-                            class="neon-link">LinkedIn</a>
-                    </div>
-                </div>
+                <a href="mailto:nicolasdosreislopes@gmail.com" class="btn">
+                    <h3>Email</h3>
+                    <p class="card-subtext">Me mande uma mensagem</p>
+                </a>
+                <a href="https://www.linkedin.com/in/nicolas-reis-682506247" class="btn" target="_blank">
+                    <h3>LinkedIn</h3>
+                    <p class="card-subtext">Conecte-se comigo</p>
+                </a>
+                <a href="https://github.com/KikiEscarlate" class="btn" target="_blank">
+                    <h3>GitHub</h3>
+                    <p class="card-subtext">Veja meus repositórios</p>
+                </a>
             </div>
         </section>
     </main>
 
+    <!-- O Footer agora está no lugar correto, dentro do body -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Nicolas dos Reis. Desenvolvido com <span class="highlight-code">&lt;/&gt;</span> e café.</p>
+            <p class="footer-subtext">Challenge Full Stack Residência</p>
+        </div>
+    </footer>
+
     <script src="Scripts/script.js"></script>
 </body>
-
 </html>
