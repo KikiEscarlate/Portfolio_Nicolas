@@ -72,7 +72,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 100px 10%; /* Espaço superior para compensar o navbar fixo */
+    padding: 100px 10%; 
 }
 
 .section-title {
@@ -181,4 +181,20 @@ nav {
 .neon-link:hover {
     color: var(--accent-color);
     text-shadow: 0 0 8px var(--accent-color);
+}
+
+/* Efeito de Iluminação do Mouse */
+.mouse-glow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; 
+    z-index: 9999; 
+    background: radial-gradient(
+        600px circle at var(--mouse-x, 50vw) var(--mouse-y, 50vh), 
+        rgba(0, 255, 204, 0.06), 
+        transparent 40%
+    );
 }
