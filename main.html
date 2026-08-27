@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicolas dos Reis | Portfólio</title>
     <link rel="stylesheet" href="Style/style.css">
     <!-- Fontes do Google (Inter e Space Mono) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="mouse-glow"></div>
     <nav id="navbar">
@@ -15,7 +18,7 @@
         <ul class="nav-links">
             <li><a href="#home">Início</a></li>
             <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>    
+            <li><a href="#projetos">Projetos</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
@@ -23,10 +26,48 @@
     <main>
         <!-- Seção Hero -->
         <section id="home" class="hero section">
-            <p class="terminal-text">> Olá, mundo. Meu nome é</p>
-            <h1 class="glitch-text">Nicolas dos Reis</h1>
-            <h2 class="subtitle">Técnico em Informática & Entusiasta em Cibersegurança</h2>
-            <p class="description">Formado pelo IFRS, com experiência prática em suporte técnico, infraestrutura e administração de redes. Busco constantemente aprender e aplicar novos conhecimentos em proteção de dados e desenvolvimento.</p>
+
+            <!-- LADO ESQUERDO: Textos agrupados na mesma coluna -->
+            <div class="hero-content">
+                <p class="terminal-text">> Olá, mundo. Meu nome é</p>
+                <h1 class="glitch-text">Nicolas dos Reis</h1>
+                <h2 class="subtitle">Técnico em Informática & Entusiasta em Cibersegurança</h2>
+                <p class="description">Formado pelo IFRS, com experiência prática em suporte técnico, infraestrutura e
+                    administração de redes. Busco constantemente aprender e aplicar novos conhecimentos em proteção de
+                    dados e desenvolvimento.</p>
+            </div>
+
+            <!-- LADO DIREITO: O Terminal -->
+            <div class="hero-visual">
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <div class="terminal-title">zsh - nicolas.reis@archlinux</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div><span class="prompt-user">nicolas.reis@archlinux:~$</span> <span
+                                class="command-text">whoami</span></div>
+                        <span class="output-text">nicolas.reis</span>
+
+                        <div><span class="prompt-user">nicolas.reis@archlinux:~$</span> <span
+                                class="command-text">skills</span></div>
+                        <span class="output-text">Python, JavaScript, Linux, SQL, Redes, Ethical Hacking</span>
+
+                        <div><span class="prompt-user">nicolas.reis@archlinux:~$</span> <span
+                                class="command-text">status</span></div>
+                        <span class="output-text">Construindo soluções seguras e explorando cibersegurança...</span>
+
+                        <!-- Última linha com cursor piscando parado -->
+                        <div><span class="prompt-user">nicolas.reis@archlinux:~$</span> <span class="cursor"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <!-- Seção Sobre & Experiência -->
@@ -35,13 +76,16 @@
             <div class="project-grid">
                 <div class="project-card">
                     <h3>Estagiário de TI (Suporte e Infraestrutura)</h3>
-                    <p class="tech-stack" style="margin: 0.5rem 0;">Brigada Militar do Estado do RS | Nov 2023 - Mai 2024</p>
-                    <p>Atuação em Suporte Técnico e Service Desk, manutenção de hardware/software, redes de computadores e atendimento ao usuário na resolução de chamados técnicos.</p>
+                    <p class="tech-stack" style="margin: 0.5rem 0;">Brigada Militar do Estado do RS | Nov 2023 - Mai
+                        2024</p>
+                    <p>Atuação em Suporte Técnico e Service Desk, manutenção de hardware/software, redes de computadores
+                        e atendimento ao usuário na resolução de chamados técnicos.</p>
                 </div>
-                
+
                 <div class="project-card">
                     <h3>Educação & Habilidades</h3>
-                    <p><strong>Formação:</strong> Técnico em Informática Integrado ao Ensino Médio - IFRS (Concluído).</p>
+                    <p><strong>Formação:</strong> Técnico em Informática Integrado ao Ensino Médio - IFRS (Concluído).
+                    </p>
                     <p><strong>Cursos:</strong> Introdução ao Ethical Hacking - Ethical Hacker Academy (IFRN).</p>
                     <div class="tech-stack">
                         <span>Python</span>
@@ -59,30 +103,40 @@
             <div class="project-grid">
                 <div class="project-card">
                     <h3>Projeto Challenge - Full Stack</h3>
-                    <p>Portfólio online construído para o desafio da residência, focado em estilização pessoal, componentização e design responsivo.</p>
+                    <p>Portfólio online construído para o desafio da residência, focado em estilização pessoal,
+                        componentização e design responsivo.</p>
                     <div class="tech-stack">
                         <span>HTML</span>
                         <span>CSS</span>
                     </div>
-                    <a href="https://github.com/KikiEscarlate/Portfolio_Nicolas" class="btn" target="_blank">Ver Repositório</a>
+                    <a href="https://github.com/KikiEscarlate/Portfolio_Nicolas" class="btn" target="_blank">Ver
+                        Repositório</a>
                 </div>
                 <div class="project-card">
                     <h3>PareceFalso - 🔎</h3>
-                    <p> Solução de segurança desenvolvida para identificar phishing, mensagens e URLs fraudulentas. O sistema integra Java com a inteligência artificial do Ollama (Llama 3.2) para analisar textos, classificar o nível de ameaça ("Pouco suspeita" a "Parece Falso Rick") e fornecer orientações de proteção ao usuário</p>
+                    <p> Solução de segurança desenvolvida para identificar phishing, mensagens e URLs fraudulentas. O
+                        sistema integra Java com a inteligência artificial do Ollama (Llama 3.2) para analisar textos,
+                        classificar o nível de ameaça ("Pouco suspeita" a "Parece Falso Rick") e fornecer orientações de
+                        proteção ao usuário</p>
                     <div class="tech-stack">
                         <span>Java</span>
                     </div>
-                    <a href="https://github.com/CarlosClips/pareceFalsoRick" class="btn" target="_blank">Ver Repositório</a>
+                    <a href="https://github.com/CarlosClips/pareceFalsoRick" class="btn" target="_blank">Ver
+                        Repositório</a>
                 </div>
                 <div class="project-card">
                     <h3>Blackjack 21</h3>
-                    <p>Jogo de Blackjack interativo desenvolvido como um projeto prático de matemática no IFRS. O grande diferencial do projeto é o algoritmo em JavaScript que calcula em tempo real a probabilidade do jogador estourar a mão (bust) com base nas cartas restantes no baralho, além de fornecer dicas de estratégia.</p>
+                    <p>Jogo de Blackjack interativo desenvolvido como um projeto prático de matemática no IFRS. O grande
+                        diferencial do projeto é o algoritmo em JavaScript que calcula em tempo real a probabilidade do
+                        jogador estourar a mão (bust) com base nas cartas restantes no baralho, além de fornecer dicas
+                        de estratégia.</p>
                     <div class="tech-stack">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
                     </div>
-                    <a href="https://github.com/KikiEscarlate/Trabalho-blackjack" class="btn" target="_blank">Ver Repositório</a>
+                    <a href="https://github.com/KikiEscarlate/Trabalho-blackjack" class="btn" target="_blank">Ver
+                        Repositório</a>
                 </div>
             </div>
         </section>
@@ -98,13 +152,15 @@
                     <p><strong>Telefone:</strong> (51) 98410-5546</p>
                     <div class="social-links" style="margin-top: 2rem;">
                         <a href="https://www.github.com/KikiEscarlate" target="_blank" class="neon-link">GitHub</a>
-                        <a href="https://www.linkedin.com/in/nicolas-reis-682506247" target="_blank" class="neon-link">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/nicolas-reis-682506247" target="_blank"
+                            class="neon-link">LinkedIn</a>
                     </div>
                 </div>
             </div>
-        </section>  
+        </section>
     </main>
 
     <script src="Scripts/script.js"></script>
 </body>
+
 </html>

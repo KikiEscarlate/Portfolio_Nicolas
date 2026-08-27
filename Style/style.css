@@ -20,6 +20,14 @@ html {
 
 body {
     background-color: var(--bg-color);
+    
+    /* === INÍCIO DO EFEITO GRID (QUADRADINHOS) */
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    background-position: center center;
+
     color: var(--text-primary);
     font-family: var(--font-sans);
     line-height: 1.6;
@@ -82,7 +90,27 @@ nav {
     margin-bottom: 2rem;
 }
 
-/* Hero Section */
+/* LAYOUT DA HERO SECTION  */
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Textos da Hero Section */
 .hero .terminal-text {
     font-family: var(--font-mono);
     color: var(--accent-color);
@@ -109,14 +137,81 @@ nav {
     font-size: 1.1rem;
 }
 
-/* Sistema de Grid para Cards */
+/* ESTILOS DO TERMINAL */
+.terminal-container {
+    background-color: #0d0d12;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 550px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    font-family: var(--font-mono);
+    overflow: hidden;
+    text-align: left;
+}
+
+.terminal-header {
+    background-color: #1a1a1d;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #222;
+    position: relative;
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+}
+
+.terminal-buttons span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.btn-close { background-color: #ff5f56; }
+.btn-minimize { background-color: #ffbd2e; }
+.btn-maximize { background-color: #27c93f; }
+
+.terminal-title {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin: 0 auto;
+}
+
+.terminal-body {
+    padding: 20px;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.prompt-user { color: var(--accent-color); font-weight: bold; }
+.command-text { color: #ffffff; }
+.output-text { color: var(--text-secondary); display: block; margin-bottom: 15px; }
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    background-color: var(--accent-color);
+    vertical-align: middle;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* SISTEMA DE GRID E CARDS DE PROJETOS */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-/* Cards de Projetos e Experiência */
 .project-card {
     background: #111114;
     border: 1px solid #222;
@@ -147,7 +242,7 @@ nav {
     gap: 1rem;
 }
 
-/* Botões e Links */
+/* BOTÕES E LINKS */
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -183,7 +278,7 @@ nav {
     text-shadow: 0 0 8px var(--accent-color);
 }
 
-/* Efeito de Iluminação do Mouse */
+/* EFEITO DE ILUMINAÇÃO DO MOUSE */
 .mouse-glow {
     position: fixed;
     top: 0;
@@ -197,4 +292,23 @@ nav {
         rgba(0, 255, 204, 0.06), 
         transparent 40%
     );
+}
+
+/* RESPONSIVIDADE (Para Celulares) */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content { 
+        max-width: 100%; 
+    }
+    .hero-visual {
+        justify-content: center;
+        width: 100%;
+        margin-top: 3rem;
+    }
+    .terminal-container { 
+        text-align: left; 
+    }
 }
